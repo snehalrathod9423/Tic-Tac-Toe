@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #97e7e7;
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    border: 2px solid #020000;
+    background-color: #d3e983;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #db1515;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+#message {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
